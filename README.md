@@ -7,3 +7,6 @@
 2. 终端启动 `server.js`, 用法: `node server.js`;
 3. 点击日志中的链接，直接访问本地静态资源的首页.
 
+> 注意一点
+在安装好nodeJs之后，记得安装: `npm install colors` 或者 `npm install`;
+

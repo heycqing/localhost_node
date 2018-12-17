@@ -9,12 +9,9 @@ var config = {
         return this.www + e;
     }
 }
-
-var LocalHostServer = http.createServer(function(req,res){
+http.createServer(function(req,res){
     console.log (colors.green("本地 server 启动....\n"));
-    var file = config.tureUrl(req.url);
-    console.log('文件所在位置file:\t'+file )
-    
+    var file = config.tureUrl(req.url);    
     fs.readFile( file ,function(err,data){
         if(err){
             res.writeHead( 404 ,{
@@ -30,6 +27,5 @@ var LocalHostServer = http.createServer(function(req,res){
             res.end();
         }   
     })
-})
-LocalHostServer.listen(config.prot);
+}).listen(config.prot);
 console.log('在浏览器中输入: ' +colors.blue('http://127.0.0.1:8888/index.html\n'))
