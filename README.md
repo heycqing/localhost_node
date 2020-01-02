@@ -3,12 +3,22 @@
 
 ## localhost_node 使用方法
 
-1. 把本地静态文件放入当前目前文件夹: `www` 中;
-2. 终端启动 `server.js`, 用法: `node server.js`;
-3. 点击日志中的链接，直接访问本地静态资源的首页.
+**首先确保你有安装 `nodeJs` 和 `git`**
 
-> 注意一点
-在安装好nodeJs之后，记得安装: `npm install colors` 或者 `npm install`;
+1. 第一步，执行下面命令，拉去仓库的资源
+
+` git clone https://github.com/heycqing/localhost_node.git `
+
+2. 第二步，执行命令，安装依赖
+
+` npm install `
+
+3. 直接把本地静态文件放入当前目前文件夹: `www` 中;
+
+4. 终端启动 `server.js`, 用法: `node server.js`;
+
+5. 点击日志中的链接，直接访问本地静态资源的首页.
+
 
 ## 关于 www 文件夹
 
