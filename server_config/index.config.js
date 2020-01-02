@@ -1,7 +1,7 @@
 module.exports = {
     // 基本配置
     baseConfig: {
-        prot:8888,
+        prot: 6699,
         www: './www',
         tureUrl: function(e){
             return this.www + e;
@@ -27,6 +27,13 @@ module.exports = {
         wma: "audio/x-ms-wma",
         wmv: "video/x-ms-wmv",
         xml: "text/xml"
-    }
+    },
+    isImg: [
+        'jpeg',
+        'jpg',
+        'png',
+        'gif',
+        'svg'
+    ]
 } 
 

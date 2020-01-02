@@ -1,0 +1,28 @@
+{
+  "name": "localhost_node",
+  "version": "1.0.0",
+  "description": "🧠 一个基于node开发的本地服务，可以存放静态文件和在本地进行数据传输处理。",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heycqing/localhost_node.git"
+  },
+  "keywords": [
+    "node",
+    "服务器"
+  ],
+  "author": "cqing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heycqing/localhost_node/issues"
+  },
+  "homepage": "https://github.com/heycqing/localhost_node#readme"
+}
