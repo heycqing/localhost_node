@@ -1,17 +1,17 @@
-# localhost_node
+# localhost_node 微型服务器
 🧠 一个基于node开发的本地服务，可以存放静态文件和在本地进行数据传输处理。
 
-## localhost_node 使用方法
+## 使用方法
 
 **首先确保你有安装 `nodeJs` 和 `git`**
 
 1. 第一步，执行下面命令，拉去仓库的资源
 
-` git clone https://github.com/heycqing/localhost_node.git `
+    ` git clone https://github.com/heycqing/localhost_node.git `
 
 2. 第二步，执行命令，安装依赖
 
-` npm install `
+    ` npm install `
 
 3. 直接把本地静态文件放入当前目前文件夹: `www` 中;
 
