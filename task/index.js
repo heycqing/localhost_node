@@ -1,7 +1,15 @@
 var fs = require('fs');
 var untilFn = require('./function.js')
 
-module.export = {
+function server404(res, err){
+    res.writeHead( 404 ,{
+        'content-type' : 'text/html;charset="utf-8" '
+    });
+    res.write('<h1>404错误，找不到页面</h1><p>'+err+'</p>');
+    res.end();
+}
+
+module.exports = {
     readText: function(filePath, res){
         fs.readFile(filePath, 'utf8',function(err,data){
             if(err){
@@ -18,7 +26,7 @@ module.export = {
     readImg: function(filePath, res){
         fs.readFile(filePath,'binary',function(err,  data)  {
             if  (err)  {
-                server404(res,err)
+                this.server404(res,err)
                 return;
             }else{
                 res.writeHeader(200,{
@@ -29,11 +37,5 @@ module.export = {
             }
         });
     },
-    server404: function(res){
-        res.writeHead( 404 ,{
-            'content-type' : 'text/html;charset="utf-8" '
-        });
-        res.write('<h1>404错误，找不到页面</h1><p>'+err+'</p>');
-        res.end();
-    }
+   
 }

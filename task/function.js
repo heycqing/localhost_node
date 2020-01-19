@@ -1,4 +1,5 @@
 var path = require('path');
+var config = require('../server_config/index.config')
 module.exports = {
     isImg: function(filepath){
         var theFile = path.extname(filepath);
