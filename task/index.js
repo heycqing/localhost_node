@@ -26,7 +26,7 @@ module.exports = {
     readImg: function(filePath, res){
         fs.readFile(filePath,'binary',function(err,  data)  {
             if  (err)  {
-                this.server404(res,err)
+                server404(res,err)
                 return;
             }else{
                 res.writeHeader(200,{
